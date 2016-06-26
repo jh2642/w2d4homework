@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>W2D4 Homework</title>
+    <meta name="description" content="An example basic webpage from The Iron Yard.">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid main-page">
+          <h1 class="text-center">JamesQuery Triple-Play</h1>
+            <div class="row col-md-offset-1">
+                <ul class="header-buttons center-block text-center">
+                    <li><a href="javascript:toggleDiv('myContent2');" class="col-md-3 btn btn-primary btn-lg active button1 button-width">PlugIn1</a></li>
+                    <li><a href="javascript:toggleDiv('myContent');" class="col-md-3 btn btn-primary btn-lg active button2 button-width">PlugIn2</a></li>
+                    <li><a href="#" class="col-md-3 btn btn-primary btn-lg active button3 button-width">PlugIn3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid">
+        </div>
+        <div style="display:none" class="plugin1" id="myContent2">
+            <img src="img/macbook.jpg" class="img-responsive laptop">
+            <div class="row carousel-caption">
+                <span class="type-it"></span>
+            </div>
+        </div>
+        <div class="container-fluid plugin2" id="myContent">
+            <p class="mySelector">This is SUPER COOL !!!!!</p>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        function toggleDiv(divId) {
+            $("#" + divId).toggle();
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('.button3').raptorize();
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/jquery.raptorize.1.0.js"></script>
+</body>
+
+</html>
