@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>W2D4 Homework</title>
+    <meta name="description" content="An example basic webpage from The Iron Yard.">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center">JamesQuery Triple-Play</h1>
+  </header>
+    <main class="container">
+      <div class="header-buttons center-block text-center">
+              <button class="plugin1 submit col-md-3 btn btn-primary btn-lg active button1 button-width">PlugIn1</button>
+              <button class="plugin2 col-md-3 btn btn-primary btn-lg active button1 button-width">PlugIn2</button>
+              <button class="plugin3 button3 col-md-3 btn btn-primary btn-lg active button1 button-width">PlugIn3</button>
+              </div>
+
+        <div class="demonstration pluginDemonstration0 center-block text-center">
+          <img src="img/james-1.jpg" class="jamespic">
+        </div>
+        <div class="demonstration pluginDemonstration1">
+            <img src="img/macbook.jpg" class="img-responsive laptop">
+            <div class="row carousel-caption">
+                <span class="type-it"></span>
+            </div>
+        </div>
+        <div class="demonstration pluginDemonstration2">
+          <div class="googleMap"
+              data-address="Indianapolis, IN"
+              data-height="500px"
+              data-width="100%">
+          </div>
+        </div>
+        <div class="demonstration pluginDemonstration3">
+          <script type="text/javascript">
+              $(window).load(function() {
+                  $('.button3').raptorize();
+              });
+          </script>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.raptorize.1.0.js"></script>
+    <script src="js/jquery.classymap.min.js"></script>
+    <script>
+      $('.googleMap').ClassyMap();
+    </script>
+
+</body>
+
+</html>
